@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-variant: small-caps;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/background.jpg);
+    position: relative;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header h1 {
+    font-size: 32px;
+    color: #6420AA;
+    margin-top: 50px;
+}
+.form {
+    display: flex;
+    gap: 16px;
+    margin-top: 50px;
+    width: 100%;
+}
+.form input {
+    border: 0;
+    min-height: 60px;
+    width: 100%;
+    color: #6420AA;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-size: 17px;
+}
+.form button {
+    background: #AF47D2;
+    color: #e7efff;
+    padding: 16px 32px;
+    border-radius: 5px; 
+    border: 0;
+    cursor: pointer;
+    animation: filter 0.5s ease;
+    font-size: 17px;
+}
+.form button:hover {
+    box-shadow: 2px 6px 10px #6420AA;
+}
+.lista {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+
+}
+.lista div {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin-bottom: 32px;
+}
+.lista h2 {
+    color: #6420AA;
+    margin-top: 20px;
+}
+.lista div button {
+    color: #6420AA;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.lista div button:hover {
+    border: 1px solid #AF47D2;
+    border-radius: 5px;
+}
+.lista ul {
+    list-style: none;
+}
+.lista ul li {
+    padding: 16px;
+    background: #fdfeff;
+    border-radius: 5px;
+    color: #6420AA;
+    border: 1px solid #f6dcff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.lista ul li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.lista ul li input[type="checkbox"] {
+    cursor: pointer;
+}
+.news {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 322px;
+    height: 141px;
+    background: #f6ebff;
+    box-shadow: 7.9px 15.8px 15.8px #6520aa7c;
+    z-index: 1000; 
+}
+.news div {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 12px;
+    background: #dfc6f4;
+    color: #6420AA;
+    font-weight: bold;
+}
+.news p {
+    padding: 16px;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #44546A;
+}
